@@ -1,0 +1,23 @@
+{
+  "name": "tp2",
+  "version": "1.0.0",
+  "description": "Práctica TDD de la asignatura Testing de Sistemas de Internet de las Cosas",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "coverage": "nyc --reporter=html mocha"
+  },
+  "keywords": [
+    "TDD",
+    "IoT",
+    "UBA"
+  ],
+  "author": "Ing. Gonzalo Nahuel Vaca",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-files": "^1.4.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
+  }
+}
