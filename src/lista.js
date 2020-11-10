@@ -9,11 +9,14 @@ module.exports = class Lista {
     }
 
     getOrdenada() {
+        let claves = [];
         if (this.cantidad() == 0) {
             return null;
         } else {
-            let ordenada = this.#elementos.sort();
-            return ordenada;
+            for (let i = 0; i < this.#elementos.length; i++) {
+                claves.push(this.#elementos[i][0]);
+            }
+            return claves.sort();
         }
     }
 

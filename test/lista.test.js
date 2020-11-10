@@ -69,7 +69,7 @@ describe("En una lista con un único elemento:", () => {
     let lista = new Lista();
     let elemento = ['clave', 'valor'];
     let resultado = [];
-    resultado.push(elemento);
+    resultado.push(elemento[0]);
     lista.agregar(elemento);
     
     it("la cantidad de elementos es 1", () => {
@@ -150,7 +150,7 @@ describe("En una lista desordenada con 4 elementos:", () => {
     });
 
     it("al recuperar la lista ordenada, obtengo una lista ordenada", () => {
-        let ordenada = [['alfa', 1], ['bravo', 2], ['charlie', 3], ['delta', 4]];
+        let ordenada = ['alfa', 'bravo', 'charlie', 'delta'];
         assert.deepEqual(lista.getOrdenada(), ordenada);
     });
 });
